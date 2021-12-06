@@ -4,14 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Lista<Integer> list = new Lista<Integer>();
+        WzimList<Integer> list = new WzimList<Integer>();
 
         for(int i = 0; i<=9; i++)
         {
             list.add(i);
         }
 
-        Lista<Integer> druga = new Lista<Integer>();
+        WzimList<Integer> druga = new WzimList<Integer>();
 
         for(int i = 20; i<=29; i++)
         {
@@ -25,7 +25,7 @@ public class Main {
             System.out.print(znak + " ");
 
         Integer[] CZESCWSPOLNA = {3,8,9,24};
-        Lista<Integer> CZESCWSPOLNA_L = new Lista<Integer>(CZESCWSPOLNA);
+        WzimList<Integer> CZESCWSPOLNA_L = new WzimList<Integer>(CZESCWSPOLNA);
 
 
         System.out.println("\n\n Po wymuszeniu czesci wspolnej: ");
@@ -41,7 +41,7 @@ public class Main {
             System.out.print(znak + " ");
 
         list.removeAll(CZESCWSPOLNA_L);
-        System.out.println("\n\n Po wywaleniu czesci wspolnej'");
+        System.out.println("\n\n Po usunieciu czesci wspolnej'");
         for (Integer znak : list)
             System.out.print(znak + " ");
 
@@ -61,7 +61,7 @@ public class Main {
         System.out.println("\n\n Podaj ostatni indeks '24': ");
         System.out.println(list.lastIndexOf(24));
 
-        System.out.println("\n\n Wyświedl sublistę o przedziałach indeksowych <4,9>:");
+        System.out.println("\n\n Wyświetl sublistę o przedziałach indeksowych <4,9>:");
         for (Object znak : list.subList(4,9).toArray())
             System.out.print(znak + " ");
 
